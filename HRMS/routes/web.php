@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\hr;
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +16,5 @@ use App\Http\Controllers\hr;
 */
 
 Route::get('/', [hr::class, "presence"]);
+Route::post('/register', [UserController::class, "register"]);
+
