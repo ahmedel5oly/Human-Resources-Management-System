@@ -24,7 +24,7 @@
             text-align: center;
             max-width: 400px;
         }
-        input[type="text"],
+        input[type="email"],
         input[type="password"] {
             width: 100%;
             padding: 10px;
@@ -52,7 +52,7 @@
         <h2>Login</h2>
         <form action="/register" method="POST">
             @csrf
-            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="Email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
         </form>
