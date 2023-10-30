@@ -52,8 +52,14 @@
         <h2>Login</h2>
         <form action="/register" method="POST">
             @csrf
-            <input type="email" name="Email" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email" required>
+            @error('email')
+            <p class="m-0 small alert alert-danger shadow-sm">{{$message}}</p>
+            @enderror
             <input type="password" name="password" placeholder="Password" required>
+            @error('password')
+            <p class="m-0 small alert alert-danger shadow-sm">{{$message}}</p>
+            @enderror
             <input type="submit" value="Login">
         </form>
     </div>
