@@ -28,7 +28,7 @@ p {
 <body class="hold-transition login-page" style="background-size: cover; background-image: url('{{ asset('assets/admin/imgs/login.jpg') }}')">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>HR</b>MS</a>
+    <a href="../../index2.html"><b>Pi  </b>Pioneers</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
@@ -36,12 +36,12 @@ p {
  
 
 
-      <p class="login-box-msg">تسجيل الدخول</p>
+      {{-- <p class="login-box-msg">تسجيل الدخول</p> --}}
 
       <form action="{{ route('admin.login') }}" method="post">
         @csrf
         <div class="input-group mb-3">
-          <input type="text" name="username" class="form-control" placeholder="اسم المستخدم" >
+          <input type="text" name="username" class="form-control" placeholder="user" >
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -54,7 +54,7 @@ p {
         @enderror
 
         <div class="input-group mb-3">
-          <input type="password" name="password" class="form-control" placeholder="كلمة المرور">
+          <input type="password" name="password" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -69,7 +69,7 @@ p {
         <div class="row">
         
             <div class="col-12">
-              <button type="submit" class="btn btn-primary btn-block btn-flat">دخول </button>
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign in</button>
             </div>
             <!-- /.col -->
           </div>
