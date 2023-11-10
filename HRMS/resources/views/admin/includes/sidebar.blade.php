@@ -84,19 +84,19 @@
               </a>
             </li>
 
-            <li class="nav-item">
+              {{-- <li class="nav-item">
               <a href="{{ route('Nationalities.index') }}" class="nav-link  {{ (request()->is('admin/Nationalities*'))?'active':'' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>       أنواع الجنسيات</p>
               </a>
-            </li>
+            </li> --}}
 
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a href="{{ route('Religions.index') }}" class="nav-link  {{ (request()->is('admin/Religions*'))?'active':'' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>       أنواع الديانات</p>
               </a>
-            </li>
+            </li> --}}
           </ul>
         </li>
 
