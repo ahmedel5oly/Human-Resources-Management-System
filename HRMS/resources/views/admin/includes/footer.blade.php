@@ -4,5 +4,5 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2023 <a href="https://adminlte.io">Ahmed Elkholy</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; {{date('Y')}} <a href="https://portofolio-website-ahmed-elkholy.netlify.app/">Ahmed Elkholy</a>.</strong> All rights reserved.
   </footer>

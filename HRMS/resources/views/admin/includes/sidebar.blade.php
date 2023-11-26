@@ -30,24 +30,24 @@
                 <p>الضبط العام</p>
               </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a href="{{ route('finance_calender.index') }}" class="nav-link  {{ (request()->is('admin/finance_calender*'))?'active':'' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p> السنوات المالية</p>
               </a>
-            </li>
+            </li> --}}
             <li class="nav-item">
               <a href="{{ route('branches.index') }}" class="nav-link  {{ (request()->is('admin/branches*'))?'active':'' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>  الفروع</p>
               </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a href="{{ route('ShiftsTypes.index') }}" class="nav-link  {{ (request()->is('admin/ShiftsTypes*'))?'active':'' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>  انواع الشفتات</p>
               </a>
-            </li>
+            </li> --}}
 
             <li class="nav-item">
               <a href="{{ route('departements.index') }}" class="nav-link  {{ (request()->is('admin/departements*'))?'active':'' }}">
@@ -63,12 +63,12 @@
               </a>
             </li>
            
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a href="{{ route('Qualifications.index') }}" class="nav-link  {{ (request()->is('admin/Qualifications*'))?'active':'' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>     مؤهلات الموظفين</p>
               </a>
-            </li>
+            </li> --}}
 
             <li class="nav-item">
               <a href="{{ route('occasions.index') }}" class="nav-link  {{ (request()->is('admin/occasions*'))?'active':'' }}">
@@ -77,12 +77,12 @@
               </a>
             </li>
 
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a href="{{ route('Resignations.index') }}" class="nav-link  {{ (request()->is('admin/Resignations*'))?'active':'' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>       أنواع ترك العمل</p>
               </a>
-            </li>
+            </li> --}}
 
               {{-- <li class="nav-item">
               <a href="{{ route('Nationalities.index') }}" class="nav-link  {{ (request()->is('admin/Nationalities*'))?'active':'' }}">
