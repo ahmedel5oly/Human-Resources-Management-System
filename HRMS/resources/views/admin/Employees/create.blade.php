@@ -40,14 +40,14 @@
       
         <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" id="personal_date" data-toggle="pill" href="#custom-content-personal_data" role="tab" aria-controls="custom-content-personal_data" aria-selected="true">بيانات شخصية</a>
+            <a class="nav-link active" id="personal_date" data-toggle="pill" href="#custom-content-personal_data" role="tab" aria-controls="custom-content-personal_data" aria-selected="true">البيانات الاساسية</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="jobs_data" data-toggle="pill" href="#custom-content-jobs_data" role="tab" aria-controls="custom-content-jobs_data" aria-selected="false">بيانات وظيفة</a>
+            <a class="nav-link" id="jobs_data" data-toggle="pill" href="#custom-content-jobs_data" role="tab" aria-controls="custom-content-jobs_data" aria-selected="false">بيانات العمل</a>
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link" id="addtional_data" data-toggle="pill" href="#custom-content-addtional_data" role="tab" aria-controls="custom-content-addtional_data" aria-selected="false">بيانات اضافية</a>
-          </li>
+          </li> --}}
           
         </ul>
         <div class="tab-content" id="custom-content-below-tabContent">
@@ -55,7 +55,7 @@
           <br>
             <div class="row">
          
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>    كود بصمة الموظف</label>
                      <input autofocus type="text" name="zketo_code" id="zketo_code" class="form-control" value="{{ old('zketo_code') }}" >
@@ -63,10 +63,10 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
                <div class="col-md-4">
                   <div class="form-group">
-                     <label>    اسم الموظف  كاملا</label>
+                     <label>    اسم الموظف  </label>
                      <input type="text" name="emp_name" id="emp_name" class="form-control" value="{{ old('emp_name') }}" >
                      @error('emp_name')
                      <span class="text-danger">{{ $message }}</span> 
@@ -75,7 +75,7 @@
                </div>
                <div class="col-md-4">
                   <div class="form-group">
-                     <label>  نوع الجنس</label>
+                     <label>  النوع </label>
                      <select  name="emp_gender" id="emp_gender" class="form-control">
                      <option   @if(old('emp_gender')==1) selected @endif  value="1">ذكر</option>
                      <option @if(old('emp_gender')==2 ) selected @endif value="1">انثي</option>
@@ -85,7 +85,7 @@
                      @enderror
                   </div>
                </div>
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>   الفرع التابع له الموظف</label>
                      <select name="branch_id " id="branch_id " class="form-control select2 ">
@@ -100,12 +100,12 @@
                      <span class="text-danger">{{ $message }}</span>
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
 
    
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>  المؤهل الدراسي</label>
                      <select name="Qualifications_id" id="Qualifications_id  " class="form-control select2 ">
@@ -120,8 +120,8 @@
                      <span class="text-danger">{{ $message }}</span>
                      @enderror
                   </div>
-               </div>
-               <div class="col-md-4">
+               </div> --}}
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>       سنة التخرج</label>
                      <input type="text" name="Qualifications_year" id="Qualifications_year" class="form-control" value="{{ old('Qualifications_year') }}" >
@@ -129,9 +129,9 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>   تقدير التخرج</label>
                      <select  name="graduation_estimate" id="graduation_estimate" class="form-control">
@@ -146,9 +146,9 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>       تخصص التخرج</label>
                      <input type="text" name="Graduation_specialization" id="Graduation_specialization" class="form-control" value="{{ old('Graduation_specialization') }}" >
@@ -156,7 +156,7 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
 
                
@@ -172,14 +172,14 @@
 
                <div class="col-md-4">
                   <div class="form-group">
-                     <label>         رقم بطاقة الهوية</label>
+                     <label>   الرقم القومى</label>
                      <input type="text" name="emp_national_idenity" id="emp_national_idenity" class="form-control" value="{{ old('emp_national_idenity') }}" >
                      @error('emp_national_idenity')
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
                </div>
-               <div class="col-md-4">
+                {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>         مركز اصدار بطاقة الهوية </label>
                      <input type="text" name="emp_identityPlace" id="emp_identityPlace" class="form-control" value="{{ old('emp_identityPlace') }}" >
@@ -212,7 +212,7 @@
                      <span class="text-danger">{{ $message }}</span>
                      @enderror
                   </div>
-               </div>
+               </div> --}}
                <div class="col-md-4">
                   <div class="form-group">
                      <label>    الجنسية</label>
@@ -229,7 +229,7 @@
                      @enderror
                   </div>
                </div>
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>  اللغة الاساسية التي يتحدث بها</label>
                      <select name="emp_lang_id  " id="emp_lang_id  " class="form-control select2 ">
@@ -244,8 +244,8 @@
                      <span class="text-danger">{{ $message }}</span>
                      @enderror
                   </div>
-               </div>
-               <div class="col-md-4">
+               </div> --}}
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>    الديانة</label>
                      <select name="religion_id" id="religion_id" class="form-control select2 ">
@@ -260,9 +260,9 @@
                      <span class="text-danger">{{ $message }}</span>
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>      البريد الالكتروني</label>
                      <input type="text" name="emp_email" id="emp_email" class="form-control" value="{{ old('emp_email') }}" >
@@ -270,9 +270,9 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>    الدول</label>
                      <select name="country_id" id="country_id" class="form-control select2 ">
@@ -287,8 +287,8 @@
                      <span class="text-danger">{{ $message }}</span>
                      @enderror
                   </div>
-               </div>
-               <div class="col-md-4">
+               </div> --}}
+               {{-- <div class="col-md-4">
                   <div class="form-group" id="governorates_Div">
                      <label>    المحافظات</label>
                      <select name="governorates_id" id="governorates_id" class="form-control select2 ">
@@ -311,10 +311,10 @@
                      <span class="text-danger">{{ $message }}</span>
                      @enderror
                   </div>
-               </div>
+               </div> --}}
                <div class="col-md-4">
                   <div class="form-group">
-                     <label>       عنوان الاقامة الحالي للموظف</label>
+                     <label>    العنوان</label>
                      <input type="text" name="staies_address" id="staies_address" class="form-control" value="{{ old('staies_address') }}" >
                      @error('staies_address')
                      <span class="text-danger">{{ $message }}</span> 
@@ -322,7 +322,7 @@
                   </div>
                </div>
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>     هاتف المنزل</label>
                      <input type="text" name="emp_home_tel" id="emp_home_tel" class="form-control" value="{{ old('emp_home_tel') }}" >
@@ -330,11 +330,11 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
                <div class="col-md-4">
                   <div class="form-group">
-                     <label>     هاتف العمل</label>
+                     <label>     رقم تليفون</label>
                      <input type="text" name="emp_work_tel" id="emp_work_tel" class="form-control" value="{{ old('emp_work_tel') }}" >
                      @error('emp_work_tel')
                      <span class="text-danger">{{ $message }}</span> 
@@ -342,7 +342,7 @@
                   </div>
                </div>
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>    حالة الخدمة العسكرية</label>
                      <select name="emp_military_id" id="emp_military_id" class="form-control select2 ">
@@ -357,9 +357,9 @@
                      <span class="text-danger">{{ $message }}</span>
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
-               <div class="col-md-4 related_miltary_1"  style="display: none;">
+               {{-- <div class="col-md-4 related_miltary_1"  style="display: none;">
                   <div class="form-group">
                      <label>    تاريخ بداية الخدمة العسكرية	</label>
                      <input type="date" name="emp_military_date_from" id="emp_military_date_from" class="form-control" value="{{ old('emp_military_date_from') }}" >
@@ -367,10 +367,10 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
 
-               <div class="col-md-4 related_miltary_1"  style="display: none;">
+               {{-- <div class="col-md-4 related_miltary_1"  style="display: none;">
                   <div class="form-group">
                      <label>    تاريخ نهاية الخدمة العسكرية	</label>
                      <input type="date" name="emp_military_date_to" id="emp_military_date_to" class="form-control" value="{{ old('emp_military_date_to') }}" >
@@ -378,9 +378,9 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
-               <div class="col-md-4 related_miltary_1"  style="display: none;">
+               {{-- <div class="col-md-4 related_miltary_1"  style="display: none;">
                   <div class="form-group">
                      <label>     سلاح الخدمة العسكرية	</label>
                      <input type="text" name="emp_military_wepon	" id="emp_military_wepon	" class="form-control" value="{{ old('emp_military_wepon') }}" >
@@ -419,10 +419,10 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>    هل يمتلك رخصة قيادة</label>
                      <select  name="does_has_Driving_License" id="does_has_Driving_License" class="form-control">
@@ -435,9 +435,9 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
-               <div class="col-md-4 related_does_has_Driving_License"  style="display: none;">
+               {{-- <div class="col-md-4 related_does_has_Driving_License"  style="display: none;">
                   <div class="form-group">
                      <label>  رقم رخصة القيادة</label>
                      <input type="text" name="driving_License_degree" id="driving_License_degree" class="form-control" value="{{ old('driving_License_degree') }}" >
@@ -489,9 +489,9 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
+               </div> --}}
 
-               <div class="col-md-4">
+               {{-- <div class="col-md-4">
                   <div class="form-group">
                      <label>    هل يمتلك اعاقة / عمليات سابقة </label>
                      <select  name="is_Disabilities_processes" id="is_Disabilities_processes" class="form-control">
@@ -517,8 +517,8 @@
                      <span class="text-danger">{{ $message }}</span> 
                      @enderror
                   </div>
-               </div>
-               <div class="col-md-12 " >
+               </div> --}}
+               {{-- <div class="col-md-12 " >
                   <div class="form-group">
                      <label> ملاحظات علي الموظف </label>
                      <textarea type="text" name="notes" id="notes" class="form-control" >
@@ -531,7 +531,7 @@
                   </div>
                </div>
 
-           </div>
+           </div> --}}
 
          </div>
           <div class="tab-pane fade" id="custom-content-jobs_data" role="tabpanel" aria-labelledby="jobs_data">
@@ -539,7 +539,7 @@
             <div class="row">
             <div class="col-md-4 " >
                <div class="form-group">
-                  <label>   تاريخ التعيين</label>
+                  <label>   تاريخ التعاقد</label>
                   <input type="date" name="emp_start_date" id="emp_start_date" class="form-control" value="{{ old('emp_start_date') }}" >
                   @error('emp_start_date')
                   <span class="text-danger">{{ $message }}</span> 
@@ -547,7 +547,7 @@
                </div>
             </div>
 
-            <div class="col-md-4">
+            {{-- <div class="col-md-4">
                <div class="form-group">
                   <label>    الحالة الوظيفية</label>
                   <select  name="Functiona_status" id="Functiona_status" class="form-control">
@@ -676,10 +676,10 @@
                   <span class="text-danger">{{ $message }}</span> 
                   @enderror
                </div>
-            </div>
+            </div> --}}
             <div class="col-md-4" >
                <div class="form-group">
-                  <label>     راتب الموظف الشهري</label>
+                  <label>     الراتب</label>
                   <input type="text" name="emp_sal" id="emp_sal" oninput="this.value=this.value.replace(/[^0-9.]/g,'');" class="form-control" value="{{ old('emp_sal') }}" >
                   @error('emp_sal')
                   <span class="text-danger">{{ $message }}</span> 
@@ -687,7 +687,7 @@
                </div>
             </div>
 
-            <div class="col-md-4">
+            {{-- <div class="col-md-4">
                <div class="form-group">
                   <label>  هل  له حافز </label>
                   <select  name="MotivationType" id="MotivationType" class="form-control">
@@ -818,11 +818,11 @@
                   <span class="text-danger">{{ $message }}</span> 
                   @enderror
                </div>
-            </div>
+            </div> --}}
 
          </div>
          </div>
-          <div class="tab-pane fade" id="custom-content-addtional_data" role="tabpanel" aria-labelledby="addtional_data">
+          {{-- <div class="tab-pane fade" id="custom-content-addtional_data" role="tabpanel" aria-labelledby="addtional_data">
             <br>
             <div class="row">
             <div class="col-md-4 " >
@@ -889,7 +889,7 @@
                   <span class="text-danger">{{ $message }}</span> 
                   @enderror
                </div>
-            </div>
+            </div> --}}
          </div>
 
          </div>
@@ -906,7 +906,7 @@
             <div class="col-md-12">
                <div class="form-group text-center">
                   <button class="btn btn-sm btn-success" type="submit" name="submit">اضف الموظف </button>
-                  <a href="{{ route('Religions.index') }}" class="btn btn-danger btn-sm">الغاء</a>
+                  {{-- <a href="{{ route('Religions.index') }}" class="btn btn-danger btn-sm">الغاء</a> --}}
                </div>
             </div>
          </form>
