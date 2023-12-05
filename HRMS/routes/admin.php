@@ -13,8 +13,8 @@ use App\Http\Controllers\Admin\Jobs_categoriesController;;
 use App\Http\Controllers\Admin\QualificationsController;
 use App\Http\Controllers\Admin\OccasionsController;
 use App\Http\Controllers\Admin\ResignationsController;
-use App\Http\Controllers\Admin\NationalitiesController;
-use App\Http\Controllers\Admin\ReligionController;
+//use App\Http\Controllers\Admin\NationalitiesController;
+//use App\Http\Controllers\Admin\ReligionController;
 use App\Http\Controllers\Admin\EmployeesController;
 
 /*
